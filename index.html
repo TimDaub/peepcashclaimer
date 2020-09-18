@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>peep.cash is gone...</title>
+  </head>
+  <body>
+      <div class="message"></div>
+      <script type="text/javascript">
+          var text = "This domain once hosted a burner wallet for leapdao.org's plasma chain. If you have traded DAI <> ETH in the exchange, you may have received airdrops. For you to claim them easily, this site now displays your private key. You can copy it into another wallet to claim your airdrops: ";
+          console.log(document.querySelector(".message"));
+          document.querySelector(".message").innerHTML = text + localStorage.getItem("metaPrivateKey");
+      </script>
+  </body>
+</html>
